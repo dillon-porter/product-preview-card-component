@@ -1,0 +1,135 @@
+:root {
+    /* Colors */
+    --cream: hsl(30, 38%, 92%);
+    --dark-cyan: hsl(158, 36%, 37%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--cream);
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.desktop-img {
+    display: none;
+}
+
+.container {
+    max-width: 375px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: var(--white);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .mobile-img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.container h1 {
+    font-family: 'Fraunces', serif;
+}
+
+.container p {
+    font-size: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+    width: 90%;
+    margin-left: 30px;
+}
+
+.card .card-title {
+    font-size: 12px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.add-to-card-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    color: white;
+    width: 90%;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.card-prices {
+    display: flex;
+    gap: 15px;
+}
+
+.card-new-sale-price {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.card-sale-price {
+    text-decoration: line-through;
+    margin-top: 10px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1000px) {
+    .mobile-img {
+        display: none;
+    }
+    .container {
+        display: flex;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 200px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card h1 {
+        width: 70%;
+    }
+    .card p {
+        width: 200px;
+        line-height: 25px;
+    }
+    .desktop-img {
+        display: block;
+        width: 50%;
+    }
+    .add-to-card-btn {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
