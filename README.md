@@ -2,6 +2,9 @@
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
+- [Challenge](https://github.com/dillon-porter/product-preview-card-component/)
+- [Demo](https://dillon-porter.github.io/product-preview-card-component/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
